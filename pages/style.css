@@ -30,6 +30,8 @@ img {
 }
 #btns{
     margin-top: 28%;
+    display: flex;
+    justify-content: center;
 }
 #btn {
     margin-top: 8%;
