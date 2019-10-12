@@ -25,9 +25,13 @@ app.use(expressValidator());
 
 // routes middleware
 app.use("/api", userRoutes)
-//db 
 
+//connection
+const port = process.env.PORT || 8000
 
+app.listen(port, () => {
+    console.log(`server is running on port ${port}`);
+})
 // app.post("/signup", function (req, res) {
 //     console.log(req.body);
 //     res.send({
@@ -39,8 +43,4 @@ app.use("/api", userRoutes)
 
 
 
-const port = process.env.PORT || 8000
 
-app.listen(port, () => {
-    console.log(`server is running on port ${port}`);
-})
