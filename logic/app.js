@@ -7,6 +7,11 @@ const expressValidator = require('express-validator')
 require('dotenv').config()
 // import routes
 const authRoutes = require('../routes/auth.js');
+const userRoutes = require('../routes/user');
+const categoryRoutes = require('../routes/category');
+
+
+
 //database connection
     mongoose.connect(process.env.DATABASE, {
         useUnifiedTopology: true,
@@ -25,6 +30,10 @@ app.use(expressValidator());
 
 // routes middleware
 app.use("/api", authRoutes)
+app.use("/api", userRoutes)
+app.use("/api", categoryRoutes)
+
+
 
 //connection
 const port = process.env.PORT || 8000
