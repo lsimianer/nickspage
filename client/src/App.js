@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from "./pages/landing/Landing";
 import Home from "./pages/home/Home";
 import Store from "./pages/store/Store";
-import Calendar from "./pages/calendar/Calendar";
+import Schedule from "./pages/schedule/Schedule";
 import Education from "./pages/education/Education";
 import Pay from "./pages/pay/Pay";
 import Results from "./pages/results/Results";
@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/Home" component={Home} />
           <Route exact path="/Education" component={Education} />
           <Route exact path="/Store" component={Store} /> 
-          <Route exact path="/Calendar" component={Calendar} />
+          <Route exact path="/Schedule" component={Schedule} />
           <Route exact path="/Pay" component={Pay} />
           <Route exact path="/Results" component={Results} />
          
