@@ -2,7 +2,14 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./results.css";
 import brtext from'../images/brtext.jpg';
+// import rhino from '../images/babyrino.jpg';
+import { Container } from 'reactstrap';
+import  HomeCarousel  from './carousel'
+
 // import API from "../../utils/API.js";
+
+
+
 
 class Results extends Component {
 
@@ -52,6 +59,13 @@ class Results extends Component {
             </ul>
         </div>
         </nav>
+        <Container id="sectionResults">
+        <HomeCarousel></HomeCarousel>
+        </Container>
+
+
+
+
         </div>
     );
     }
