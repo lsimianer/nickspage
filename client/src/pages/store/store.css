@@ -2,7 +2,8 @@
     background-image: url(../images/babyrino.jpg);
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position: center;;
+    background-position: center;
+    ;
     z-index: -5;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     padding-top: 0%;
@@ -26,16 +27,18 @@
 .storeCard {
     margin-left: 24%;
 }
+
 .storeCard:hover {
     -webkit-transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
-    box-shadow: 0 0 15px rgb(3, 152, 211); 
+    box-shadow: 0 0 15px rgb(3, 152, 211);
 
 }
 
 .storeBtn {
     font-family: 'Permanent Marker', cursive;
 }
+
 .storeBtn:hover {
     color: rgb(3, 152, 211);
 }
@@ -44,8 +47,24 @@
     height: 25vh;
 
 }
-.storeCB{
+
+.storeCB {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+#cartDiv {
+    display: flex;
+    justify-content: end;
+}
+
+#cartLogo {
+    height: 50px;
+    margin-left: -100%;
+}
+
+#cartCount {
+    display: inline;
+    color: black;
 }

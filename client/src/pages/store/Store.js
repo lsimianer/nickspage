@@ -5,6 +5,8 @@ import brtext from'../images/brtext.jpg';
 import rhino from'../images/babyrino.jpg';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Card from "react-bootstrap/Card";
+import shoppingCart from "../images/cart1.jpg";
+
 
 
 // import API from "../../utils/API.js";
@@ -55,6 +57,9 @@ class Store extends Component {
                     <Link class="nav-link" to={"Education"}>Education</Link>
                 </li>
             </ul>
+        </div>
+        <div id="cartDiv">
+        <Link to="/pay"><img id='cartLogo' src={shoppingCart}/><h3 id='cartCount'>0</h3></Link>
         </div>
         </nav>
         <div id="section3">
@@ -121,4 +126,6 @@ class Store extends Component {
     }
 }
 
+
+// https://codepen.io/paulkim/pen/oZLavq shopping cart and modal example
 export default Store;
