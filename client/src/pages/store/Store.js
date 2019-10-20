@@ -2,6 +2,11 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./store.css";
 import brtext from'../images/brtext.jpg';
+import rhino from'../images/babyrino.jpg';
+import { Container, Row, Col, Button } from 'reactstrap';
+import Card from "react-bootstrap/Card";
+
+
 // import API from "../../utils/API.js";
 
 class Store extends Component {
@@ -27,8 +32,8 @@ class Store extends Component {
         <div>
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <Link to={"/"} id="navImg" class="navbar-left">
-            <img id="navImg" src={brtext}/></Link>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <img id="navImg" src={brtext} alt="product"/></Link>
+            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,20 +57,66 @@ class Store extends Component {
             </ul>
         </div>
         </nav>
+        <div id="section3">
+        <Container id="sectionStore">
+       <Row>
+        <Col xs="6">
+            <Card className="storeCard"style={{ width: '18rem' }}>
+                <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
+                <Card.Body className="storeCB">
+                 <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                </Card.Body>
+            </Card>  
+            <br/>
+            <br/> 
+            <Card className="storeCard"style={{ width: '18rem' }}>
+                <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
+                <Card.Body className="storeCB">
+                 <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                </Card.Body>
+            </Card>                  
+        </Col>
+    {/* seperation of columns */}
+        <Col xs="6">
+            <Card className="storeCard"style={{ width: '18rem' }}>
+                <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
+                <Card.Body className="storeCB">
+                 <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                </Card.Body>
+            </Card> 
+            <br/>
+            <br/>  
+            <Card className="storeCard" style={{ width: '18rem' }}>
+                <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
+                <Card.Body className="storeCB">
+                 <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                </Card.Body>
+            </Card>                  
+        </Col>
+      </Row>
+      </Container>
+      </div>
         </div>
-        // <div className="container">
-        // <Card style={{ width: '18rem' }}>
-        //     <Card.Img variant="top" src="holder.js/100px180" />
-        //         <Card.Body>
-        //             <Card.Title>Card Title</Card.Title>
-        //             <Card.Text>
-        //             Some quick example text to build on the card title and make up the bulk of
-        //             the card's content.
-        //             </Card.Text>
-        //         <Button variant="primary">Go somewhere</Button>
-        //     </Card.Body>
-        // </Card>
-        // </div>
     );
     }
 }

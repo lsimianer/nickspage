@@ -27,7 +27,7 @@ class Education extends Component {
         <div>
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <Link to={"/"} id="navImg" class="navbar-left">
-            <img id="navImg" src={brtext}/></Link>
+            <img id="navImg" src={brtext} alt="product"/></Link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

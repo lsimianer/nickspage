@@ -28,7 +28,7 @@ class Schedule extends Component {
         <div>
             <nav className="navbar navbar-expand-lg navbar-custom">
                 <Link to={"/"} id="navImg" className="navbar-left">
-            <img id="navImg" src={brtext}/></Link>
+            <img id="navImg" src={brtext} alt="product"/></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
