@@ -15,11 +15,11 @@
     "react-calendar": "^2.19.2",
     "react-coverflow": "^0.2.20",
     "react-dom": "^16.10.2",
+    "react-iframe": "^1.8.0",
     "react-router-dom": "^5.1.0",
     "react-scripts": "0.9.5",
     "reactstrap": "^5.0.0"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

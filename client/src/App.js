@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/Education" component={Education} />
           <Route exact path="/Store" component={Store} /> 
           <Route exact path="/Schedule" component={Schedule} />
-          <Route exact path="/Pay" component={Pay} />
+          <Route exact path="/Checkout" component={Pay} />
           <Route exact path="/Results" component={Results} />
          
           {/* 404 page */}

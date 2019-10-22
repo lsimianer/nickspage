@@ -43,27 +43,30 @@ size: cover;
     height: 100vh;
     z-index: -5;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-    padding-top: 5%;
+    padding-top: 1%;
     margin-top: 0%;
 }
 
-.container1 {
-    background-image: linear-gradient(rgba(17, 1, 1, 0.226) 0%, rgba(12, 12, 12, 0.377) 20%, transparent 20%);
-    background-color: rgba(0, 0, 0, 0.774);
-    color: rgb(247, 241, 241);
-    height: 55vh;
-    width: 95vw;
+#scheduleContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    height: 100vh;
     margin-top: 0%;
-    border-radius: 25px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0 auto;
+    border-radius: 15px;
 }
-
-#mainBody {
-    font-size: 1.5rem;
-    /* background-image: linear-gradient(105deg,rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0.9) 50%, transparent 1000%); */
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+#calendarContainer{
+    padding-top: 2%;
+margin-left: 26%;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.952);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 5, 5);
+  outline: 1px solid rgb(4, 100, 196);
+}
+#form{
+    padding-bottom: 6%;
+    color: white;
 }

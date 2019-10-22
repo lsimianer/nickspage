@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./pay.css";
 import brtext from'../images/brtext.jpg';
+import { Container, Row, Col, Button } from 'reactstrap';
+
 // import API from "../../utils/API.js";
 
 class Pay extends Component {
@@ -47,14 +49,28 @@ class Pay extends Component {
                     <Link class="nav-link" to={"/results"}>Client Success</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link" to={"Education"}>Education</Link>
+                    <Link class="nav-link" to={"/Education"}>Education</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link" to={"/Checkout"}>Checkout</Link>
                 </li>
             </ul>
         </div>
         </nav>
+        <Container id="cartContainer">
+            <Container id="items">
+            <div id="firstItem">one</div>         
+            <div id="secondItem">two</div>         
+            <div id="ThirdItem">three</div>         
+            <div id="FourthItem">four</div>    
+            </Container>
+            <Container id="paypalApi">
+                paypal api here
+            </Container>
+        </Container>
         </div>
     );
     }
 }
-
+// https://www.robinwieruch.de/react-paypal-payment paypal walkthrough
 export default Pay;

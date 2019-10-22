@@ -54,7 +54,10 @@ class Store extends Component {
                     <Link class="nav-link" to={"/results"}>Client Success</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link" to={"Education"}>Education</Link>
+                    <Link class="nav-link" to={"/Education"}>Education</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link" to={"/Checkout"}>Checkout</Link>
                 </li>
             </ul>
         </div>

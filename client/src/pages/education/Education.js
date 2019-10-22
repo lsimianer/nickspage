@@ -47,11 +47,25 @@ class Education extends Component {
                     <Link class="nav-link" to={"/results"}>Client Success</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link" to={"Education"}>Education</Link>
+                    <Link class="nav-link" to={"/Education"}>Education</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link" to={"/Checkout"}>Checkout</Link>
                 </li>
             </ul>
         </div>
         </nav>
+
+        <section id="section1">
+        <div class="container1">
+            <h1 id="header"> Baby Rhino Physiques</h1>
+            <h2 id="subhead">Where dreams are realized</h2>
+            <br/>
+            <p id="mainBody">Exclusive members only training content coming soon, join the mailing list to be updated!</p>
+        </div>
+    </section>
+
+
         </div>
     );
     }
