@@ -22,6 +22,7 @@
     padding-top: 5%;
     margin-top: 3%;
     border-radius: 25px;
+    overflow-y: scroll;
 }
 
 .storeCard {
@@ -37,6 +38,7 @@
 
 .storeBtn {
     font-family: 'Permanent Marker', cursive;
+    height: 15vh;
 }
 
 .storeBtn:hover {
@@ -67,4 +69,16 @@
 #cartCount {
     display: inline;
     color: black;
+}
+
+#ppform{
+    margin: 0 auto;
+    display: grid;
+}
+#ppImg{
+    margin-top: 2%;
+}
+
+#pp1{
+    margin: 9px auto;
 }

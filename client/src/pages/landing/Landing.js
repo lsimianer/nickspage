@@ -30,10 +30,10 @@ class Landing extends Component {
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
-                        <img src={brtext} alt="logo"/>
+                        <img className="landingImg" src={brtext} alt="logo"/>
                     </div>
                     <div className="flip-card-back">
-                        <img src={rhino} alt="logo"/>
+                        <img className="landingImg" src={rhino} alt="logo"/>
                     </div>
                 </div>
             </div>

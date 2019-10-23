@@ -104,7 +104,25 @@ class Store extends Component {
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                     </Card.Text>
-                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                <Button className="storeBtn" variant="primary">
+                <form id="ppform" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick"/>
+                <input type="hidden" name="hosted_button_id" value="LG5JU6GFP4CYY"/>
+                <table id="ppTable">
+                <tr><td><input type="hidden" name="on0" value="Quantity"/>Quantity</td></tr><tr><td><select name="os0">
+                    <option value="1 session">1 session $45.00 USD</option>
+                    <option value="2 sessions">2 sessions $80.00 USD</option>
+                    <option value="5 sessions">5 sessions $185.00 USD</option>
+                </select> </td></tr>
+                </table>
+                <input type="hidden" name="currency_code" value="USD"/>
+                <input id="pp1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                <img id="ppImg" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                </form>
+
+                
+                
+                </Button>
                 </Card.Body>
             </Card> 
             <br/>

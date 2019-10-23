@@ -63,6 +63,8 @@ class Education extends Component {
             <br/>
             <p id="mainBody">Exclusive members only training content coming soon, join the mailing list to be updated!</p>
         </div>
+
+        
     </section>
 
 
