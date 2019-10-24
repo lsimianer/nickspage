@@ -9,15 +9,11 @@ import Education from "./pages/education/Education";
 import Pay from "./pages/pay/Pay";
 import Results from "./pages/results/Results";
 import NoMatch from "./pages/NoMatch";
-// import Nav from "./components/Nav";
-
-
 
 function App() {
   return (
     <Router>
       <div>
-        {/* <Nav /> */}
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/Home" component={Home} />
@@ -26,7 +22,6 @@ function App() {
           <Route exact path="/Schedule" component={Schedule} />
           <Route exact path="/Checkout" component={Pay} />
           <Route exact path="/Results" component={Results} />
-         
           {/* 404 page */}
           <Route component={NoMatch} />
         </Switch>
