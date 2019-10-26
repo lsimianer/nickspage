@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
-img {
-    height: 75vh;
+.landingImg {
+    height: 65%;
 }
 
 #card-holder {
-    margin-left: 25%;
     text-align: center;
 }
 
-.button-container {
+
+/* .button-container {
     margin-top: 5%;
     margin-right: 39%;
     border-color: transparent;
+} */
+#btnCon{
+    margin: 0 auto;
+    justify-content: center;
 }
-
 #enter {
     width: 30vw;
     height: 10vh;

@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/Checkout" component={Pay} />
           <Route exact path="/Results" component={Results} />
           {/* 404 page */}
-          <Route component={NoMatch} />
+          <Route path='*' component={NoMatch} />
         </Switch>
       </div>
     </Router>
