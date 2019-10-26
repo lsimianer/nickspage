@@ -38,12 +38,8 @@ class Home extends Component {
                 dolorum
                 fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nemo quia doloremque suscipit,
                 aliquid
-                harum odit tempore, pariatur incidunt rem optio ea ipsum voluptatem illum minus aliquam, vitae in
-                nostrum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla ratione sunt atque odit modi
-                porro
-                maiores dolor animi! Minus explicabo quibusdam culpa, molestiae et ab doloribus non neque nisi?</p>
-        </div>
+            </p>
+       </div>
     </section>
         </div>
         </div>

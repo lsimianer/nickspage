@@ -40,7 +40,7 @@ class Store extends Component {
         <Container id="sectionStore">
        <Row>
         <Col xs="6">
-            <Card className="storeCard"style={{ width: '18rem' }}>
+            <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
@@ -50,10 +50,12 @@ class Store extends Component {
                     </Card.Text>
                 <Button className="storeBtn" variant="primary">ADD TO CART</Button>
                 </Card.Body>
-            </Card>  
-            <br/>
-            <br/> 
-            <Card className="storeCard"style={{ width: '18rem' }}>
+            </Card> 
+            </Col>
+            <Col> 
+            {/* <br/>
+            <br/>  */}
+            <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
@@ -65,9 +67,11 @@ class Store extends Component {
                 </Card.Body>
             </Card>                  
         </Col>
+    </Row>
     {/* seperation of columns */}
+    <Row>
         <Col xs="6">
-            <Card className="storeCard"style={{ width: '18rem' }}>
+            <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
@@ -89,16 +93,16 @@ class Store extends Component {
                 <input type="hidden" name="currency_code" value="USD"/>
                 <input id="pp1" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
                 <img id="ppImg" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-                </form>
-
-                
+                </form>  
                 
                 </Button>
                 </Card.Body>
-            </Card> 
-            <br/>
-            <br/>  
-            <Card className="storeCard" style={{ width: '18rem' }}>
+            </Card>
+            </Col> 
+            <Col>
+            {/* <br/>
+            <br/>   */}
+            <Card id="storeCard" style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>

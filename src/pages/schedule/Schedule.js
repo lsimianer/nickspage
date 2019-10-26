@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./schedule.css";
 import brtext from'../images/brtext.jpg';
 import Iframe from 'react-iframe'
-import { Button, Form, FormGroup, Label, Input, FormText, Container } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
 import Navbar  from '../components/navbar'
 
 
@@ -33,11 +33,14 @@ class Schedule extends Component {
         <div>
            <Navbar/>
         
-        <div id="section1">
-        <Container id="scheduleContainer">   
-            <Container id="calendarContainer">   
-                <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bHNpbWlhbmVyQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;mode=MONTH&amp;showTitle=1&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"
-                width="500px"
+        <div id="sectionSchedule">
+        <Container id="scheduleContainer">
+          <Row>
+              <Col sm="12" md={{ size: 6, offset: 3 }}>
+            <Container id="calendarContainer">  
+             {/*when replacing iframe with nicks ensure width is 100%  */}
+                <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bHNpbWlhbmVyQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;mode=MONTH&amp;showTitle=1&amp;showNav=1" style="border-width:0"  frameborder="0" scrolling="no"
+                width="100%"
                 height="450px"
                 id="myId"
                 className="myClassname"
@@ -111,7 +114,8 @@ class Schedule extends Component {
     </Form>
   
 
-
+      </Col>
+    </Row>
        {/* end form */}
         </Container>       
         </div>

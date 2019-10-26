@@ -27,7 +27,7 @@ class Education extends Component {
         <div>
             <Navbar/>
 
-        <section id="section1">
+        <section id="sectionEdu">
         <div class="container1">
             <h1 id="header"> Baby Rhino Physiques</h1>
             <h2 id="subhead">Where dreams are realized</h2>

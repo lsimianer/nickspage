@@ -1,4 +1,6 @@
-
+body{
+    /* background-color: black; */
+}
 
 
 /* #jumboPic{
@@ -19,7 +21,7 @@ size: cover;
     background-image: linear-gradient(rgba(17, 1, 1, 0.226) 0%, rgba(12, 12, 12, 0.377) 20%, transparent 20%);
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(247, 241, 241);
-    height: 55vh;
+    height:100vh;
     width: 95vw;
     margin-top: 0%;
     border-radius: 25px;
@@ -28,10 +30,23 @@ size: cover;
     text-align: center;
     margin: 0 auto;
 }
+.container1:hover {
+    background-color:  rgba(0, 0, 0, 0.856);
+}
 
 #mainBody {
     font-size: 1.5rem;
     /* background-image: linear-gradient(105deg,rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0.9) 50%, transparent 1000%); */
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
+}
+@media (max-width: 70em) {
+    body {
+        /* background-color: black; */
+    }
+    #section1{
+        background-size: 200vh;
+        background-position-x: -1%;
+
+    }
 }

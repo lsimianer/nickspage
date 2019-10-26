@@ -1,4 +1,3 @@
-
 .active {
     font-size: 1.55rem;
     color: blue;
@@ -7,7 +6,7 @@
 }
 
 
-#section1 {
+#sectionSchedule {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/collage.jpg);
     background-size: cover;
     background-position-y: 0%;
@@ -18,26 +17,49 @@
     margin-top: 0%;
 }
 
-#scheduleContainer{
+#scheduleContainer {
     background-color: rgba(0, 0, 0, 0.5);
     overflow-y: scroll;
     height: 100vh;
     margin-top: 0%;
     border-radius: 15px;
 }
-#calendarContainer{
-    padding-top: 2%;
-margin-left: 26%;
+#scheduleContainer::-webkit-scrollbar { width: 0 !important }
+#scheduleContainer { overflow: -moz-scrollbars-none; }
+#scheduleContainer { -ms-overflow-style: none; }
+
+#scheduleContainer:hover {
+    background-color:  rgba(0, 0, 0, 0.856);
 }
+
+#calendarContainer {
+    padding-top: 2%;
+}
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.952);
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(5, 5, 5);
-  outline: 1px solid rgb(4, 100, 196);
+    background-color: rgb(5, 5, 5);
+    outline: 1px solid rgb(4, 100, 196);
 }
-#form{
-    padding-bottom: 6%;
+
+#form {
+    padding-bottom: 10%;
     color: white;
+}
+
+@media (max-width: 70em) {
+    
+    #form {
+        padding-bottom: 20%;
+    }
+    #sectionSchedule{
+        background-size: 200vh;
+        background-position-x: -1%;
+    }
+    #calendarContainer{
+        width: 100%;
+    }
 }
