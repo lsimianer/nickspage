@@ -4,6 +4,8 @@ import "./schedule.css";
 import brtext from'../images/brtext.jpg';
 import Iframe from 'react-iframe'
 import { Button, Form, FormGroup, Label, Input, FormText, Container } from 'reactstrap';
+import Navbar  from '../components/navbar'
+
 
 // import Calendar from 'react-calendar'
 // import API from "../../utils/API.js";
@@ -29,36 +31,7 @@ class Schedule extends Component {
     render() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-custom">
-                <Link to={"/"} id="navImg" className="navbar-left">
-            <img id="navImg" src={brtext} alt="product"/></Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-                <li className="nav-item active">
-                    <Link className="nav-link" to={"/Home"}>Home</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={"/Schedule"}>Book Training</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={"/Store"}>Buy Swag</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={"/results"}>Client Success</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to={"/Education"}>Education</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/Checkout"}>Checkout</Link>
-                </li>
-            </ul>
-        </div>
-        </nav>
+           <Navbar/>
         
         <div id="section1">
         <Container id="scheduleContainer">   

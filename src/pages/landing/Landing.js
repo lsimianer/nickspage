@@ -10,10 +10,10 @@ class Landing extends Component {
     render() {
     return (
         <div>
+                           
+        <Container  id="card-holder">
             <Row>
-                <Col  sm="12">               
-                    <Container id="card-holder">
-                    {/* <div id="card-holder">  */}
+                <Col sm="12" md={{ size: 6, offset: 3 }}>
                     <div className="flip-card">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
@@ -24,19 +24,20 @@ class Landing extends Component {
                             </div>
                         </div>
                     </div>
-                    </Container>
                 </Col>
             </Row>
-
+        </Container>
+            
+        <Container id='btnCon'>
             <Row>
-                <Col  sm="12">
-                     <Container id='btnCon'>
-                        <div className="button-container">
-                            <button id="enter"><Link id="enter" to={"/Home"}>Where dreams are realized</Link></button>
-                        </div>
-                    </Container>
-                 </Col>
+                <Col sm="12" md={{ size: 6, offset: 3 }}>
+                    <div className="button-container">
+                       <button id="enter"><Link id="enter" to={"/Home"}>Where dreams are realized</Link></button>
+                    </div>
+                </Col>
             </Row>
+        </Container>
+
         </div>
     );
 }}

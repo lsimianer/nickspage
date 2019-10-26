@@ -7,6 +7,7 @@ import p4 from '../images/p4.jpeg';
 import p5 from '../images/p5.jpeg';
 import p6 from '../images/p6.jpeg';
 
+
 const fn = function () {
     console.log("something clicked")
 };

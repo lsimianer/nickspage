@@ -6,6 +6,8 @@ import rhino from'../images/babyrino.jpg';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Card from "react-bootstrap/Card";
 import shoppingCart from "../images/cart1.jpg";
+import Navbar  from '../components/navbar'
+
 
 
 
@@ -32,39 +34,8 @@ class Store extends Component {
     render() {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-custom">
-                <Link to={"/"} id="navImg" class="navbar-left">
-            <img id="navImg" src={brtext} alt="product"/></Link>
-            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <Link class="nav-link" to={"/Home"}>Home</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/Schedule"}>Book Training</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/Store"}>Buy Swag</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/results"}>Client Success</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/Education"}>Education</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to={"/Checkout"}>Checkout</Link>
-                </li>
-            </ul>
-        </div>
-        <div id="cartDiv">
-        <Link to="/pay"><img id='cartLogo' src={shoppingCart}/><h3 id='cartCount'>0</h3></Link>
-        </div>
-        </nav>
+            <Navbar/>
+        
         <div id="section3">
         <Container id="sectionStore">
        <Row>
