@@ -7,12 +7,16 @@
     #noCol {
         display: none;
     }
+    #hamburger {
+        animation: pulse 35s infinite;
+    }
 }
 
-#linkies{
+#linkies {
     display: flex;
     margin-right: 14%;
 }
+
 #navImg {
     height: 17vh;
     padding-right: 2.5rem;
@@ -41,4 +45,51 @@ nav {
     color: blue;
     text-shadow: 5px;
 
+}
+
+
+
+
+@-webkit-keyframes pulse {
+    0% {
+        background-color: rgb(242, 248, 250);
+    }
+
+    25% {
+        background-color: rgb(155, 234, 253);
+    }
+
+    50% {
+        background-color: rgb(95, 193, 238);
+    }
+
+    75% {
+        background-color: rgb(41, 158, 194);
+    }
+
+    100% {
+        background-color: rgb(247, 246, 245);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgb(242, 248, 250);
+    }
+
+    25% {
+        background-color: rgb(155, 234, 253);
+    }
+
+    50% {
+        background-color: rgb(95, 193, 238);
+    }
+
+    75% {
+        background-color: rgb(41, 158, 194);
+    }
+
+    100% {
+        background-color: rgb(247, 246, 245);
+    }
 }

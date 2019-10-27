@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import brtext from'../images/brtext.jpg';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import "./nav.css";
-import { Link } from "react-router-dom";
-import shoppingCart from "../images/cart1.jpg";
 
 const Example = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -22,7 +20,7 @@ const Example = (props) => {
               <NavLink id='noCol' href="/Education ">Education</NavLink>
               <NavLink id='noCol' href="/Checkout">Checkout</NavLink>
             </div>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <NavbarToggler id='hamburger' onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>

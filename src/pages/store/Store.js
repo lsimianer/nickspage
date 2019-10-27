@@ -39,7 +39,7 @@ class Store extends Component {
         <div id="section3">
         <Container id="sectionStore">
        <Row>
-        <Col xs="6">
+        <Col >
             <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
                 <Card.Body className="storeCB">
@@ -52,7 +52,7 @@ class Store extends Component {
                 </Card.Body>
             </Card> 
             </Col>
-            <Col> 
+            <Col xs="6"> 
             {/* <br/>
             <br/>  */}
             <Card id="storeCard"style={{ width: '18rem' }}>
@@ -70,7 +70,7 @@ class Store extends Component {
     </Row>
     {/* seperation of columns */}
     <Row>
-        <Col xs="6">
+        <Col>
             <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
                 <Card.Body className="storeCB">
@@ -99,7 +99,7 @@ class Store extends Component {
                 </Card.Body>
             </Card>
             </Col> 
-            <Col>
+            <Col >
             {/* <br/>
             <br/>   */}
             <Card id="storeCard" style={{ width: '18rem' }}>
