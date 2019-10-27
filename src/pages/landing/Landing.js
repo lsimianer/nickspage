@@ -4,6 +4,8 @@ import "./landing.css";
 import rhino from '../images/babyrino.jpg';
 import brtext from'../images/brtext.jpg';
 import { Container, Row, Col } from 'reactstrap';
+// import Footer  from '../components/footer';
+
 
 class Landing extends Component {
 
@@ -37,6 +39,7 @@ class Landing extends Component {
                 </Col>
             </Row>
         </Container>
+        {/* <Footer/> */}
 
         </div>
     );

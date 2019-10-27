@@ -1,10 +1,7 @@
 import React, {Component} from "react";
-// import { Link } from "react-router-dom";
 import "./home.css";
-// import brtext from'../images/brtext.jpg';
-import Navbar  from '../components/navbar'
-// import API from "../../utils/API.js";
-
+import Navbar  from '../components/navbar';
+import Footer  from '../components/footer';
 class Home extends Component {
 
 //     state = {
@@ -42,6 +39,7 @@ class Home extends Component {
        </div>
     </section>
         </div>
+        <Footer/>
         </div>
     );
     }

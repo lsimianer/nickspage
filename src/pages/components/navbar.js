@@ -3,7 +3,7 @@ import brtext from'../images/brtext.jpg';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import "./nav.css";
 
-const Example = (props) => {
+const NavCom = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -52,4 +52,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default NavCom;

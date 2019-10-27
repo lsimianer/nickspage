@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./pay.css";
-import brtext from'../images/brtext.jpg';
+import Footer  from '../components/footer';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Navbar  from '../components/navbar'
 
@@ -65,6 +65,7 @@ class Pay extends Component {
 
             </Container>
         </Container>
+        <Footer/>
         </div>
     );
     }

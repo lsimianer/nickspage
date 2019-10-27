@@ -22,6 +22,8 @@ function App() {
           <Route exact path="/Schedule" component={Schedule} />
           <Route exact path="/Checkout" component={Pay} />
           <Route exact path="/Results" component={Results} />
+          <Route path='/gram' component={() => window.location = 'https://instagram.com'}/>
+
           {/* 404 page */}
           <Route path='*' component={NoMatch} />
         </Switch>

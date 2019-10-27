@@ -1,5 +1,7 @@
 import React from "react";
 import { Col, Row, Container,Jumbotron } from 'reactstrap';
+// import Footer  from '../components/footer';
+
 
 function NoMatch() {
   return (

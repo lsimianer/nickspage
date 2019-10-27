@@ -8,7 +8,7 @@
         display: none;
     }
     #hamburger {
-        animation: pulse 35s infinite;
+        animation: pulse 5s infinite;
     }
 }
 

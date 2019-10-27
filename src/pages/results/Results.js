@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./results.css";
-import brtext from'../images/brtext.jpg';
+import Footer  from '../components/footer';
 import Navbar  from '../components/navbar'
 import { Container } from 'reactstrap';
 import  HomeCarousel  from './carousel'
@@ -39,7 +39,7 @@ class Results extends Component {
 
 
 
-
+<Footer/>
         </div>
     );
     }

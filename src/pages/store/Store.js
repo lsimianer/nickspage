@@ -5,7 +5,7 @@ import brtext from'../images/brtext.jpg';
 import rhino from'../images/babyrino.jpg';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Card from "react-bootstrap/Card";
-import shoppingCart from "../images/cart1.jpg";
+import Footer  from '../components/footer';
 import Navbar  from '../components/navbar'
 
 
@@ -117,6 +117,7 @@ class Store extends Component {
       </Row>
       </Container>
       </div>
+      <Footer/>
         </div>
     );
     }

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./schedule.css";
-import brtext from'../images/brtext.jpg';
+import Footer  from '../components/footer';
 import Iframe from 'react-iframe'
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
 import Navbar  from '../components/navbar'
@@ -119,6 +119,7 @@ class Schedule extends Component {
        {/* end form */}
         </Container>       
         </div>
+        <Footer/>
         </div>
         
     );
