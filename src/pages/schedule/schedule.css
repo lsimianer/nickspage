@@ -18,7 +18,7 @@
 }
 
 #scheduleContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     overflow-y: scroll;
     height: 100%;
     margin-top: 0%;
@@ -47,6 +47,9 @@ body::-webkit-scrollbar-thumb {
 
 #form {
     padding-bottom: 10%;
+    color: black;
+}
+#form:hover {
     color: white;
 }
 
@@ -54,12 +57,15 @@ body::-webkit-scrollbar-thumb {
     
     #form {
         padding-bottom: 20%;
+        color: white;
     }
     #sectionSchedule{
         background-size: 200vh;
-        background-position-x: -1%;
+        background-position-x: 0%;
     }
     #calendarContainer{
         width: 100%;
+        background-color:  rgba(0, 0, 0, 0.856);
+
     }
 }
