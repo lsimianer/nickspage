@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+
 #insta{
-    color: black;
+    color: white;
     font-size: 2.5rem;
+    margin-top: 12%;
+}
+#insta:hover{
+    transform: scale(1.1);
+    color: rgb(3, 152, 211);
+}
+
+#footText{
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+#footText:hover{
+    transform: scale(1.03);
+    color: rgb(3, 152, 211);
+
+}
+#footCon{
+    background-color: black;
+    height: 25vw;
+    margin-top: -15%;
 }

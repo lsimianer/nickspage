@@ -22,7 +22,8 @@ function App() {
           <Route exact path="/Schedule" component={Schedule} />
           <Route exact path="/Checkout" component={Pay} />
           <Route exact path="/Results" component={Results} />
-          <Route path='/gram' component={() => window.location = 'https://instagram.com'}/>
+          <Route path='/gram' component={() => window.location = 'https://www.instagram.com/br_physiques/'}/>
+          <Route path='/CodeHounds' component={() => window.location = 'https://codehounds.io'}/>
 
           {/* 404 page */}
           <Route path='*' component={NoMatch} />

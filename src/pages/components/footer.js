@@ -13,9 +13,11 @@ return (
         <Container id='footCon'>
         <Link to='/gram' target='_blank'><FaInstagram id="insta"/></Link>
          <br/>
-        Nick@coachrhino.com
-        <br/>
-        &copy; brphysiques
+         <br/>
+        <h3 id='footText'> Nick@coachrhino.com</h3>
+        <h3 id='footText'>&copy; 2019 brphysiques</h3>
+          <Link to='/CodeHounds' target='_blank'><h3 id='footText'>A CodeHounds Website</h3></Link>
+
 
         </Container>
     </div>

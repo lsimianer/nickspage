@@ -21,12 +21,14 @@
     height: 17vh;
     padding-right: 2.5rem;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
 nav {
     background-color: rgb(255, 255, 255);
     color: black;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1.25rem;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Teko', sans-serif;
+
+    font-size: 2.25rem;
 }
 
 #navbarNav a {
@@ -35,7 +37,7 @@ nav {
 
 #noCol:hover {
     color: rgb(3, 152, 211);
-    font-size: 1.75rem;
+    font-size: 2.55rem;
     /* text-shadow: 7px 17px 2px rgb(0, 2, 5), 0 0 .2em rgb(0, 7, 10), 0 0 0.5em rgb(3, 152, 211); */
 }
 
