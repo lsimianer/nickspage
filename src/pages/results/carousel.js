@@ -39,9 +39,9 @@ class HomeCarousel extends Component {
           height={980}
           displayQuantityOfSide={2}
           navigation={true}
-          enableHeading={true}          
-          clickable={true}
-          enableScroll={true}
+          // enableHeading={true}          
+          // clickable={true}
+          // enableScroll={true}
           active={this.state.active}
           media={{
             '@media (max-width: 900px)': {
