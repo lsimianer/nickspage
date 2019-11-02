@@ -34,12 +34,9 @@ class Results extends Component {
         <div>
            <Navbar/>
         <Container id="sectionResults">
-        <HomeCarousel></HomeCarousel>
+            <HomeCarousel></HomeCarousel>
         </Container>
-
-
-
-<Footer/>
+            <Footer/>
         </div>
     );
     }
