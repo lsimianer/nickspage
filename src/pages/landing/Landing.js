@@ -1,17 +1,20 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./landing.css";
-import rhino from '../images/babyrino.jpg';
-import brtext from'../images/brtext.jpg';
+import rhino from '../images/babyrhino2.png';
+import brtext from'../images/text2.png';
 import { Container, Row, Col } from 'reactstrap';
 // import Footer  from '../components/footer';
 
+
+//     background-image: linear-gradient(#20202052, #34abcf65)
 
 class Landing extends Component {
 
     render() {
     return (
         <div>
+            {/* <Container id='landingBody' > */}
                            
         <Container  id="card-holder">
             <Row>
@@ -38,8 +41,8 @@ class Landing extends Component {
                     </div>
                 </Col>
             </Row>
-        </Container>
-        {/* <Footer/> */}
+            </Container>
+            {/* </Container> */}
 
         </div>
     );

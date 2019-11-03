@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
-
+/* #landingBody{
+    height: 100%;
+    z-index: 999;
+    margin: 0 auto;
+    background-image: linear-gradient(#fafafaf3, #000000e5);
+} */
 .landingImg {
     height: 65%;
 }
@@ -8,6 +13,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 3%;
+    z-index: 1;
 }
 
 
