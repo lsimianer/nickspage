@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+// import ReactDOM from 'react-dom'
 import "./results.css";
 import Coverflow from 'react-coverflow';
 import p0 from '../images/p2.jpeg';
