@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./schedule.css";
 import Footer  from '../components/footer';
 import Iframe from 'react-iframe'
-import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
+import { Jumbotron, Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
 import Navbar  from '../components/navbar'
 
 
@@ -47,51 +47,29 @@ class Schedule extends Component {
                 display="initial"
                 position="relative"/>
              </Container>
+             </Col>
+             </Row>
         {/* begin form */}
-        <Form id="form">
-      <FormGroup>
-        <Label for="exampleEmail">Email</Label>
-        <Input type="email" name="email" id="email" placeholder="email" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="examplePassword">Phone Number</Label>
-        <Input type="phone" name="phone" id="phone" placeholder="1-800-GAINZ" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="exampleSelect">Number of sessions you're requesting</Label>
-        <Input type="select" name="select" id="exampleSelect">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </Input>
-      </FormGroup>
-      <FormGroup>
-      <Label for="exampleText">If this is your first time training with me please briefly describe your goals</Label>
-        <Input type="textarea" name="goals" id="goals" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="exampleText">list the dates you're requesting in a hh/dd/mm/yyyy format</Label>
-        <Input type="textarea" name="text" id="exampleText" placeholder="4PM/12/12/2019" />
-      </FormGroup>
-      {/* <FormGroup>
-        <Label for="exampleFile">File</Label>
-        <Input type="file" name="file" id="exampleFile" />
-        <FormText color="muted">
-          This is some placeholder block-level help text for the above input.
-          It's a bit lighter and easily wraps to a new line.
-        </FormText>
-      </FormGroup> */}
-      
-      <Button>Submit</Button>
-    </Form>
-  
-
-      </Col>
-    </Row>
-       {/* end form */}
-        </Container>       
+              <Jumbotron id='trainPkg'>
+              <h1 className="display-3">Monthly Training Subscription</h1>
+                <p className="lead">Subscribe to a monthly training package to save money </p>
+                <hr className="my-2" />
+                <p>$225 a month for 5 sessions etc, no backrubs tho</p>
+                <p className="lead">
+                  <Button color="primary">Subscribe Now</Button>
+                </p>
+            </Jumbotron>
+            <Jumbotron id='trainPkg'>
+                <h1 className="display-3">Single Training sessions</h1>
+                <p className="lead">Purchase a single training session to address your goals </p>
+                <hr className="my-2" />
+                <p>$55 a session, still no backrubs tho</p>
+                <p className="lead">
+                  <Button color="primary">Purchase Now</Button>
+                </p>
+            </Jumbotron>   
+          </Container>       
+        
         </div>
         <Footer/>
         </div>
