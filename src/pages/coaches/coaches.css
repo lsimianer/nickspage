@@ -1,5 +1,6 @@
 #coachesContainer{
-    
+    width: 100%;
+    margin: 0 auto;
 }
 .card {
     perspective: 150rem;

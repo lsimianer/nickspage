@@ -36,7 +36,6 @@ class Coaches extends Component {
     <div>
         <Navbar/>
             <Container id='coachesContainer'>        
-                 <div id="section3">
                      <Row>
                         <Col xs="6" sm="4">
                         <div className="card">
@@ -137,7 +136,6 @@ class Coaches extends Component {
                             </div>
                         </Col>
                     </Row>                
-                </div>
             </Container>
         <Footer/>
     </div>
