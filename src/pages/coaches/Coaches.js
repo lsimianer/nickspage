@@ -37,14 +37,14 @@ class Coaches extends Component {
         <Navbar/>
             <Container id='coachesContainer'>        
                      <Row>
-                        <Col xs="6" sm="4">
+                        <Col>
                         <div className="card">
                             <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--1">
                                         &nbsp;
                                     </div>
                                     <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--1"> Bronze Package</span>
+                                        <span className="card__heading-span card__heading-span--1">Bronz Package</span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
@@ -69,7 +69,7 @@ class Coaches extends Component {
                         </Col>
 
 
-                        <Col xs="6" sm="4">
+                        <Col>
                             <div className="card">
                                 <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--2">
@@ -96,14 +96,14 @@ class Coaches extends Component {
                                             <p className="card__price-only">Per Month</p>
 
                                         </div>
-                                        <a href="#popup" className="btn btn--white">Join now!</a>
+                                        <a href="#popup" className="btn cardBtn btn--white">Join now!</a>
                                     </div>
                                 </div>
                             </div>
                         </Col>
 
 
-                        <Col xs="6" sm="4">
+                        <Col>
                             <div className="card">
                                 <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--3">

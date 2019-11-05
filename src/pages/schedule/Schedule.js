@@ -33,7 +33,6 @@ class Schedule extends Component {
         <div>
            <Navbar/>
         
-        <div id="sectionSchedule">
         <Container id="scheduleContainer">
           <Row>
               <Col sm="12" md={{ size: 6, offset: 3 }}>
@@ -50,27 +49,112 @@ class Schedule extends Component {
              </Col>
              </Row>
         {/* begin form */}
-              <Jumbotron id='trainPkg'>
-              <h1 className="display-3">Monthly Training Subscription</h1>
-                <p className="lead">Subscribe to a monthly training package to save money </p>
-                <hr className="my-2" />
-                <p>$225 a month for 5 sessions etc, no backrubs tho</p>
-                <p className="lead">
-                  <Button color="primary">Subscribe Now</Button>
-                </p>
-            </Jumbotron>
-            <Jumbotron id='trainPkg'>
-                <h1 className="display-3">Single Training sessions</h1>
-                <p className="lead">Purchase a single training session to address your goals </p>
-                <hr className="my-2" />
-                <p>$55 a session, still no backrubs tho</p>
-                <p className="lead">
-                  <Button color="primary">Purchase Now</Button>
-                </p>
-            </Jumbotron>   
-          </Container>       
-        
-        </div>
+        <h3 className='calendarText'>See above calendar for available dates</h3>
+        <Container id='coachesContainer'>        
+                     <Row className="row-grid">
+                        <Col>
+                        <div className="card">
+                            <div className="card__side card__side--front">
+                                    <div className="card__picture card__picture--1">
+                                        &nbsp;
+                                    </div>
+                                    <h4 className="card__heading">
+                                        <span className="card__heading-span card__heading-span--1">Bronz Package</span>
+                                    </h4>
+                                    <div className="card__details">
+                                        <ul>
+                                            <li>24/7 Access</li>
+                                            <li>Nutrition Coaching</li>
+                                            <li>Enjoy up to 4 Group Classes per week</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back-1">
+                                    <div className="card__cta">
+                                        <div className="card__price-box">
+                                            <p className="card__price-only">Only</p>
+                                            <p className="card__price-value">$67</p>
+                                            <p className="card__price-only">Per Month</p>
+
+                                        </div>
+                                        <a href="#popup" className="btn btn--white">Join now!</a>
+                                    </div>
+                                </div>
+                        </div>
+                        </Col>
+
+
+                        <Col>
+                            <div className="card">
+                                <div className="card__side card__side--front">
+                                    <div className="card__picture card__picture--2">
+                                        &nbsp;
+                                    </div>
+                                    <h4 className="card__heading">
+                                        <span className="card__heading-span card__heading-span--2">Silver Package</span>
+                                    </h4>
+                                    <div className="card__details">
+                                        <ul>
+                                            <li>24/7 Access</li>
+                                            <li>Unlimited Classes</li>
+                                            <li>Nutrition Coaching</li>
+                                            <li>2 hours of One-on-One coaching per month</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div className="card__side card__side--back card__side--back-2">
+                                    <div className="card__cta">
+                                        <div className="card__price-box">
+                                            <p className="card__price-only">Only</p>
+                                            <p className="card__price-value">$107</p>
+                                            <p className="card__price-only">Per Month</p>
+
+                                        </div>
+                                        <a href="#popup" className="btn cardBtn btn--white">Join now!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+
+
+                        <Col>
+                            <div className="card">
+                                <div className="card__side card__side--front">
+                                    <div className="card__picture card__picture--3">
+                                        &nbsp;
+                                    </div>
+                                    <h4 className="card__heading">
+                                        <span className="card__heading-span card__heading-span--3">Gold Package</span>
+                                    </h4>
+                                    <div className="card__details">
+                                        <ul>
+                                            <li>24/7 Access</li>
+                                            <li>Unlimited Classes</li>
+                                            <li>Nutrition Coaching</li>
+                                            <li>4 hours of One-on-One coaching per month</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div className="card__side card__side--back card__side--back-3">
+                                    <div className="card__cta">
+                                        <div className="card__price-box">
+                                            <p className="card__price-only">Only</p>
+                                            <p className="card__price-value">$137</p>
+                                            <p className="card__price-only">Per Month</p>
+
+                                        </div>
+                                        <a href="#popup" className="btn btn--white">Join now!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>                
+            </Container>
+
+
+          </Container>           
         <Footer/>
         </div>
         

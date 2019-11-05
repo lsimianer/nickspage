@@ -11,13 +11,24 @@ render() {
 return (
     <div>
         <Container id='footCon'>
+      <Row>
+        <Col >
         <Link to='/gram' target='_blank'><FaInstagram id="insta"/></Link>
+        </Col>
+      </Row>
          <br/>
          <br/>
-        <h3 id='footText'> Nick@coachrhino.com</h3>
-        <h3 id='footText'>&copy; 2019 brphysiques</h3>
-          <Link to='/CodeHounds' target='_blank'><h3 id='footText'>A CodeHounds Website</h3></Link>
-
+         <Row>
+            <Col>
+              <h3 id='footText'> Nick@coachrhino.com</h3>
+            </Col>
+            <Col>
+              <h3 id='footText'>&copy; 2019 brphysiques</h3>
+            </Col>
+            <Col>
+                <Link to='/CodeHounds' target='_blank'><h3 id='footText'>A CodeHounds Website</h3></Link>
+            </Col>
+         </Row>
 
         </Container>
     </div>
