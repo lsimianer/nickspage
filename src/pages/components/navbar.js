@@ -17,8 +17,9 @@ const NavCom = (props) => {
               <NavLink id='noCol' href="/Schedule">Book Training</NavLink>
               <NavLink id='noCol' href="/Store ">Buy Swag</NavLink>
               <NavLink id='noCol' href="/Results ">Client Success</NavLink>
+              <NavLink id='noCol' href="/Coaches ">Coaches</NavLink>
               <NavLink id='noCol' href="/Education ">Education</NavLink>
-              <NavLink id='noCol' href="/Checkout">Checkout</NavLink>
+              {/* <NavLink id='noCol' href="/Checkout">Checkout</NavLink> */}
             </div>
         <NavbarToggler id='hamburger' onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
@@ -36,11 +37,14 @@ const NavCom = (props) => {
               <NavLink href="/Results ">Client Success</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Education ">Education</NavLink>
+              <NavLink href="/Coaches ">Coaches</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Checkout">Checkout</NavLink>
+              <NavLink href="/Education ">Education</NavLink>
             </NavItem>
+            {/* <NavItem>
+              <NavLink href="/Checkout">Checkout</NavLink>
+            </NavItem> */}
           </Nav>
         </Collapse>
         {/* <div id="cartDiv">

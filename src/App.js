@@ -6,9 +6,10 @@ import Home from "./pages/home/Home";
 import Store from "./pages/store/Store";
 import Schedule from "./pages/schedule/Schedule";
 import Education from "./pages/education/Education";
-import Pay from "./pages/pay/Pay";
 import Results from "./pages/results/Results";
+import Coaches from './pages/coaches/Coaches'
 import NoMatch from "./pages/NoMatch";
+// import Pay from "./pages/pay/Pay";
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
           <Route exact path="/Education" component={Education} />
           <Route exact path="/Store" component={Store} /> 
           <Route exact path="/Schedule" component={Schedule} />
-          <Route exact path="/Checkout" component={Pay} />
+          <Route exact path="/Coaches" component={Coaches} />
           <Route exact path="/Results" component={Results} />
           <Route path='/gram' component={() => window.location = 'https://www.instagram.com/br_physiques/'}/>
           <Route path='/CodeHounds' component={() => window.location = 'https://codehounds.io'}/>
 
+          {/* <Route exact path="/Checkout" component={Pay} /> */}
           {/* 404 page */}
           <Route path='*' component={NoMatch} />
         </Switch>
