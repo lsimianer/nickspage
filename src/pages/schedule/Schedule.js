@@ -50,9 +50,57 @@ class Schedule extends Component {
              </Row>
         {/* begin form */}
         <h3 className='calendarText'>See above calendar for available dates</h3>
-        <Container id='coachesContainer'>        
+        <Container id="inPersonTrainingContainer">
+        <h3 className="trainingText">IN PERSON TRAINING</h3>  
+        <h4> All training packages include customized nutrition guidelines, workout plans for days you do not train with me, cardio guidelines,
+             supplement guidelines and weekly check-ins/alterations as needed.</h4> 
+        <Row>
+        <Col>
+            <div className='inPersonPurchase' id='inPersonCardBuy'>
+                <form id="ppTrainingForm" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick"/>
+                    <input type="hidden" name="hosted_button_id" value="YTPTFXSMG8CR4"/>
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="Monthly Sessions"/>Monthly Sessions</td></tr><tr><td><select name="os0">
+                        <option value="2x weekly per month">2x weekly per month $400.00 USD</option>
+                        <option value="3x weekly per month">3x weekly per month $550.00 USD</option>
+                        <option value="4x weekly per month">4x weekly per month $700.00 USD</option>
+                        <option value="5x weekly per month">5x weekly per month $850.00 USD</option>
+                        <option value="Single Session">Single Session $60.00 USD</option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD"/>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                </form>                              
+            </div> 
+        </Col>
+        <Col>
+            <div className='inPersonPurchase' id='inPersonCardSubscribe'>
+                <form id="ppTrainingForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick"/>
+                    <input type="hidden" name="hosted_button_id" value="4CZD4LUFMH48C"/>
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="Monthly Training subscriptions"/>Monthly Training subscriptions</td></tr><tr><td><select name="os0">
+                        <option value="2x weekly per month">2x weekly per month : $400.00 USD - monthly</option>
+                        <option value="3x weekly per month">3x weekly per month : $550.00 USD - monthly</option>
+                        <option value="4x weekly per month">4x weekly per month : $700.00 USD - monthly</option>
+                        <option value="5x weekly per month">5x weekly per month : $850.00 USD - monthly</option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD"/>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                </form>
+            </div>
+        </Col>
+        </Row>
+
+        </Container>
+        <Container id='onlineTrainingContainer'>
+            <h3 className="trainingText">ONLINE TRAINING</h3>        
                      <Row className="row-grid">
-                        <Col>
+                        {/* <Col>
                         <div className="card">
                             <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--1">
@@ -81,7 +129,7 @@ class Schedule extends Component {
                                     </div>
                                 </div>
                         </div>
-                        </Col>
+                        </Col> */}
 
 
                         <Col>
@@ -91,14 +139,14 @@ class Schedule extends Component {
                                         &nbsp;
                                     </div>
                                     <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--2">Silver Package</span>
+                                        <span className="card__heading-span card__heading-span--2">Basic Package</span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
-                                            <li>24/7 Access</li>
-                                            <li>Unlimited Classes</li>
-                                            <li>Nutrition Coaching</li>
-                                            <li>2 hours of One-on-One coaching per month</li>
+                                            <li> weekly check-ins/alterations</li>
+                                            <li>customized nutrition guidelines</li>
+                                            <li>cardio plan</li>
+                                            <li>supplement guidelines</li>
                                         </ul>
                                     </div>
 
@@ -107,7 +155,7 @@ class Schedule extends Component {
                                     <div className="card__cta">
                                         <div className="card__price-box">
                                             <p className="card__price-only">Only</p>
-                                            <p className="card__price-value">$107</p>
+                                            <p className="card__price-value">$200</p>
                                             <p className="card__price-only">Per Month</p>
 
                                         </div>
@@ -125,14 +173,14 @@ class Schedule extends Component {
                                         &nbsp;
                                     </div>
                                     <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--3">Gold Package</span>
+                                        <span className="card__heading-span card__heading-span--3">Elite Package</span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
-                                            <li>24/7 Access</li>
-                                            <li>Unlimited Classes</li>
-                                            <li>Nutrition Coaching</li>
-                                            <li>4 hours of One-on-One coaching per month</li>
+                                            <li>Custom workout planning</li>
+                                            <li>Weekly adjustments</li>
+                                            <li>CustomNutrition Coaching</li>
+                                            <li>Cardio and supplement planning</li>
                                         </ul>
                                     </div>
 
@@ -141,7 +189,7 @@ class Schedule extends Component {
                                     <div className="card__cta">
                                         <div className="card__price-box">
                                             <p className="card__price-only">Only</p>
-                                            <p className="card__price-value">$137</p>
+                                            <p className="card__price-value">$250</p>
                                             <p className="card__price-only">Per Month</p>
 
                                         </div>
