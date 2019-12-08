@@ -2,7 +2,7 @@
   "name": "nicks-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://lsimianer.github.io/nickspage/",
+  "homepage": "http://brphysiques.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "dotenv": "^8.2.0",
