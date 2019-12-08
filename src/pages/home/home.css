@@ -1,7 +1,10 @@
 body{
     font-family: 'Teko', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 
 /* #jumboPic{
 size: cover;
@@ -30,9 +33,9 @@ size: cover;
     text-align: center;
     margin: 0 auto;
 }
-.container1:hover {
+/* .container1:hover {
     background-color:  rgba(0, 0, 0, 0.856);
-}
+} */
 
 #mainBody {
     font-size: 1.5rem;

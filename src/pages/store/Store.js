@@ -38,7 +38,8 @@ class Store extends Component {
         
         <div id="section3">
         <Container id="sectionStore">
-       <Row>
+            <h1> Coming soon</h1>
+       {/* <Row>
         <Col >
             <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
@@ -52,10 +53,10 @@ class Store extends Component {
                 </Card.Body>
             </Card> 
             </Col>
-            <Col xs="6"> 
+            <Col xs="6">  */}
             {/* <br/>
             <br/>  */}
-            <Card id="storeCard"style={{ width: '18rem' }}>
+            {/* <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
@@ -67,9 +68,9 @@ class Store extends Component {
                 </Card.Body>
             </Card>                  
         </Col>
-    </Row>
+    </Row> */}
     {/* seperation of columns */}
-    <Row>
+    {/* <Row>
         <Col>
             <Card id="storeCard"style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
@@ -99,10 +100,10 @@ class Store extends Component {
                 </Card.Body>
             </Card>
             </Col> 
-            <Col >
+            <Col > */}
             {/* <br/>
             <br/>   */}
-            <Card id="storeCard" style={{ width: '18rem' }}>
+            {/* <Card id="storeCard" style={{ width: '18rem' }}>
                 <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
@@ -114,7 +115,7 @@ class Store extends Component {
                 </Card.Body>
             </Card>                  
         </Col>
-      </Row>
+      </Row> */}
       </Container>
       </div>
       <Footer/>

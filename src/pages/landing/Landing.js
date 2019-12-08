@@ -16,21 +16,10 @@ class Landing extends Component {
         <div>
             {/* <Container id='landingBody' > */}
                            
-        <Container  id="card-holder">
-            <Row>
-                <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <div className="flip-card">
-                        <div className="flip-card-inner">
-                            <div className="flip-card-front">
-                                <img className="landingImg" src={brtext} alt="logo"/>
-                            </div>
-                            <div className="flip-card-back">
-                                <img className="landingImg" src={rhino} alt="logo"/>
-                            </div>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
+        <Container  id="landingContainer">            
+            <div id="rhinoHolder">
+                <img className="landingRhino" src={rhino} alt="logo"/>                            
+            </div>               
         </Container>
             
         <Container id='btnCon'>
@@ -41,7 +30,20 @@ class Landing extends Component {
                     </div>
                 </Col>
             </Row>
-            </Container>
+        </Container>
+
+        <div id='openingScene'>
+            <img id="landingImg" src={brtext} alt="logo"/>
+            <div id='crazyText'>
+                <Row>
+                <Col><h2 className='strobe'>DEDICATION</h2></Col>
+                <Col><h2 className='strobe'>GROWTH</h2></Col>
+                <Col><h2 className='strobe'>DETERMINATION</h2></Col>
+                <Col><h2 className='strobe'>FOCUS</h2></Col>
+                <Col><h2 className='strobe'>PASSION</h2></Col>
+                </Row>                         
+            </div>
+        </div>
             {/* </Container> */}
 
         </div>
