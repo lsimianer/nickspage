@@ -17,24 +17,24 @@ class Landing extends Component {
             {/* <Container id='landingBody' > */}
                            
         <Container  id="landingContainer">            
-            <div id="rhinoHolder">
-                <img className="landingRhino" src={rhino} alt="logo"/>                            
-            </div>               
+            <Container id="rhinoHolder">
+                <img id="landingRhino" src={rhino} alt="logo"/>                            
+            </Container>               
         </Container>
             
         <Container id='btnCon'>
             <Row>
                 <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <div className="button-container">
+                    <Container className="button-container">
                        <button id="enter"><Link id="enter" to={"/Home"}>Where dreams are realized</Link></button>
-                    </div>
+                    </Container>
                 </Col>
             </Row>
         </Container>
 
-        <div id='openingScene'>
-            <img id="landingImg" src={brtext} alt="logo"/>
-            <div id='crazyText'>
+        <Container id='openingScene'>
+                <img id="landingImg" src={brtext} alt="logo"/>
+            <Container id='crazyText'>
                 <Row>
                 <Col><h2 className='strobe'>DEDICATION</h2></Col>
                 <Col><h2 className='strobe'>GROWTH</h2></Col>
@@ -42,8 +42,8 @@ class Landing extends Component {
                 <Col><h2 className='strobe'>FOCUS</h2></Col>
                 <Col><h2 className='strobe'>PASSION</h2></Col>
                 </Row>                         
-            </div>
-        </div>
+            </Container>
+        </Container>
             {/* </Container> */}
 
         </div>
