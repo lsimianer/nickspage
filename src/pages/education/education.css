@@ -1,0 +1,14 @@
+.containerEducation{
+    background-image: linear-gradient(rgba(17, 1, 1, 0.226) 0%, rgba(12, 12, 12, 0.377) 20%, transparent 20%);
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(247, 241, 241);
+    height: 50vh;
+    width: 100vw;
+    margin-top: 0%;
+    padding-top: 20vh;
+    /* border-radius: 25px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto;
+}
