@@ -37,8 +37,9 @@ class Store extends Component {
             <Navbar/>
         
         <div id="section3">
-        <Container id="sectionStore">
-            <h1> Coming soon</h1>
+        <Container id="scheduleContainer">
+            <h1 id='header' className='underConstruction'> Coming soon</h1>
+            
        {/* <Row>
         <Col >
             <Card id="storeCard"style={{ width: '18rem' }}>

@@ -13,29 +13,19 @@ import StrapCarousel from './car2';
 
 
 class Results extends Component {
-
-//     state = {
-//         developers : {}
-//     }
-
-//     componentDidMount() {
-//         API.getDeveloperMe()
-//           .then(res => {
-//               console.log("FINDME");
-//               console.log(res.data)
-//               this.setState({ developers: res.data } )
-//         })
-//           .catch(err => console.log(err));
-//       }
-
-    
+   
 
     render() {
     return (
         <div>
            <Navbar/>
-        <Container id="sectionResults">
-            <StrapCarousel></StrapCarousel>
+        <Container id="scheduleContainer">
+            <div id='pointyTextHolder'>
+                <h1 id='header' className='underConstruction'> Client Success</h1>
+            </div>
+            <Container id='sectionResults'>
+                <StrapCarousel></StrapCarousel>
+            </Container>
         </Container>
             <Footer/>
         </div>

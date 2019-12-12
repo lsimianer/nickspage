@@ -11,15 +11,21 @@
     animation: colorfade1 20s ease-in infinite;
     z-index: 0;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-    padding-top: 1%;
     margin: 0 auto;
     border-radius: 25px;
     margin-bottom: 4%;
+    margin-top: 12%;
 }
 .carousel-item>img {
     height: 750px;
     width: 100%;
     margin: 0 auto;
+}
+#pointyTextHolder{
+    padding-top: 2%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 20vh;
 }
 
 @media (max-width: 70em) {

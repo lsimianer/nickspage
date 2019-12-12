@@ -12,22 +12,6 @@ import Navbar  from '../components/navbar'
 
 class Schedule extends Component {
 
-//     state = {
-//         developers : {}
-//     }
-
-//     componentDidMount() {
-//         API.getDeveloperMe()
-//           .then(res => {
-//               console.log("FINDME");
-//               console.log(res.data)
-//               this.setState({ developers: res.data } )
-//         })
-//           .catch(err => console.log(err));
-//       }
-
-    //calendar logic
-
     render() {
     return (
         <div>

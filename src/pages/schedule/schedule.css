@@ -7,13 +7,19 @@
 
 
 #scheduleContainer {
-    background-image: linear-gradient(#202020d5, #1391b8b7);
+    background-image: linear-gradient(#202020d5, #1391b8b7),url('../images/unnamed-10.jpg');
     /* overflow-y: scroll; */
-    height: 100%;
+    height: 170vh;
     margin-top: 0%;
     border-radius: 15px;
     padding-bottom: 2%;
     margin-bottom: 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    margin-top: -1px;
+    padding-top: 1px;
+
 }
 
 .calendarText {
