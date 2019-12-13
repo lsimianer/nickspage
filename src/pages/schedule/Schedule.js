@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./schedule.css";
 import Footer  from '../components/footer';
 import Iframe from 'react-iframe'
-import { Jumbotron, Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
+import { ListGroupItem, ListGroup, Card, Row, Col, Container } from 'reactstrap';
 import Navbar  from '../components/navbar'
 
 
@@ -84,103 +84,45 @@ class Schedule extends Component {
         <Container id='onlineTrainingContainer'>
             <h3 className="trainingText">ONLINE TRAINING</h3>        
                      <Row className="row-grid">
-                        {/* <Col>
-                        <div className="card">
-                            <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--1">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--1">Bronz Package</span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li>24/7 Access</li>
-                                            <li>Nutrition Coaching</li>
-                                            <li>Enjoy up to 4 Group Classes per week</li>
-                                        </ul>
-                                    </div>
-                            </div>
-                            <div className="card__side card__side--back card__side--back-1">
-                                    <div className="card__cta">
-                                        <div className="card__price-box">
-                                            <p className="card__price-only">Only</p>
-                                            <p className="card__price-value">$67</p>
-                                            <p className="card__price-only">Per Month</p>
-
-                                        </div>
-                                        <a href="#popup" className="btn btn--white">Join now!</a>
-                                    </div>
-                                </div>
-                        </div>
-                        </Col> */}
-
-
                         <Col>
-                            <div className="card">
-                                <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--2">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--2">Basic Package</span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li> weekly check-ins/alterations</li>
-                                            <li>customized nutrition guidelines</li>
-                                            <li>cardio plan</li>
-                                            <li>supplement guidelines</li>
-                                        </ul>
-                                    </div>
-
+                            <Container id='salesContainer'>
+                                <h3 className='salesHeader'>
+                                    Basic Training Package
+                                </h3>
+                                <div className='salesBody'>
+                                    <ul>
+                                        <li> weekly check-ins/alterations</li>
+                                        <li>customized nutrition guidelines</li>
+                                        <li>cardio plan</li>
+                                        <li>supplement guidelines</li>
+                                    </ul>
+                                    <h3 className='salesPriceTag'> Only $200 per month</h3>
                                 </div>
-                                <div className="card__side card__side--back card__side--back-2">
-                                    <div className="card__cta">
-                                        <div className="card__price-box">
-                                            <p className="card__price-only">Only</p>
-                                            <p className="card__price-value">$200</p>
-                                            <p className="card__price-only">Per Month</p>
-
-                                        </div>
-                                        <a href="#popup" className="btn cardBtn btn--white">Join now!</a>
-                                    </div>
+                                <div className='salesLinks'>
+                                    <Link to='#'><h4 className='salesLinkText'> Buy Now</h4> </Link>
+                                    <Link to='/Coaches'><h4 className='salesLinkText'> View Trainers</h4> </Link>
                                 </div>
-                            </div>
+                            </Container>             
                         </Col>
-
-
                         <Col>
-                            <div className="card">
-                                <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--3">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--3">Elite Package</span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li>Custom workout planning</li>
-                                            <li>Weekly adjustments</li>
-                                            <li>CustomNutrition Coaching</li>
-                                            <li>Cardio and supplement planning</li>
-                                        </ul>
-                                    </div>
-
+                        <Container id='salesContainer'>
+                                <h3 className='salesHeader'>
+                                    Elite Training Package
+                                </h3>
+                                <div className='salesBody'>
+                                    <ul>
+                                        <li>Custom workout planning</li>
+                                        <li>Weekly adjustments</li>
+                                        <li>CustomNutrition Coaching</li>
+                                        <li>Cardio and supplement planning</li>
+                                    </ul>
+                                    <h3 className='salesPriceTag'> Only $250 per month</h3>
                                 </div>
-                                <div className="card__side card__side--back card__side--back-3">
-                                    <div className="card__cta">
-                                        <div className="card__price-box">
-                                            <p className="card__price-only">Only</p>
-                                            <p className="card__price-value">$250</p>
-                                            <p className="card__price-only">Per Month</p>
-
-                                        </div>
-                                        <a href="#popup" className="btn btn--white">Join now!</a>
-                                    </div>
+                                <div className='salesLinks'>
+                                    <Link to='#'><h4 className='salesLinkText'> Buy Now</h4> </Link>
+                                    <Link to='/Coaches'><h4 className='salesLinkText'> View Trainers</h4> </Link>
                                 </div>
-                            </div>
+                            </Container>       
                         </Col>
                     </Row>                
             </Container>

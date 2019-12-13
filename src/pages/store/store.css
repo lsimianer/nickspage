@@ -59,8 +59,7 @@
     #section3 {
         background-size: 200vh;
         background-position-x: 42%;
-        height: 290vh;
-        padding-right: 12%;
+        /* height: 290vh; */
     }
 
     #sectionStore {

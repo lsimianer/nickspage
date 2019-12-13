@@ -5,25 +5,10 @@
         visibility: visible;
         opacity: 1;
     }
-
-    25% {
+    
+    99% {
         visibility: visible;
-        opacity: 0.95;
-    }
-
-    45% {
-        visibility: visible;
-        opacity: 0.85;
-    }
-
-    65% {
-        visibility: visible;
-        opacity: 0.88;
-    }
-
-    85% {
-        visibility: visible;
-        opacity: 0.85;
+        opacity: 0.55;
     }
 
     100% {
@@ -35,13 +20,10 @@
 
 @keyframes strobe {
     0% {
-        color: white;
-    }
-
-    50% {
         color: black;
-
     }
+
+    
 
     100% {
         color: white;
@@ -68,7 +50,7 @@
     z-index: 999;
     color: black;
     background-color: rgb(0, 0, 0);
-    animation: 8s ease-in loadHider 1;
+    animation: 8s linear loadHider 1;
     visibility: hidden;
     opacity: 0;
     /* background-image: ; */
@@ -122,7 +104,8 @@
     background-size: 20%;
     background-repeat: repeat; */
     font-size: 3.85rem;
-    animation: 0.075s ease-in strobe infinite;
+    animation: 8s ease-in strobe 1;
+    animation-fill-mode:forwards ;
 }
 
 
@@ -136,12 +119,16 @@
     }
 }
 
-@media (max-width: 70em) {
+@media screen and (max-width: 70em) {
     #enter {
         width: 85vw;
     }
 
-   
+   #scheduleContainer{
+       height: 110%;
+       overflow-y: scroll;
+       padding-bottom: 5%;
+   }
     #rhinoHolder{
         width: 20vw;
     }
@@ -153,7 +140,7 @@
     }
     #landingRhino{
         height: 42vh;
-        padding-left: 6%;
+        padding-left: 18%;
     }
     #crazyText {
         width: 50vw;

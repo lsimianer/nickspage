@@ -1,8 +1,62 @@
-#CoachBioContainer{
-    background-color: rgba(233, 233, 233, 0.582);
-    color: black;
+body{
+    overflow-x: hidden;
 }
-#coachCon{
+#coachCon {
     margin-top: 10%;
     display: inline-flex;
 }
+.card{
+    display: flex;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    width: 30.25rem;
+}
+.coachCardPic{
+    height: auto;
+}
+#coachPageContainer{
+    background-image: linear-gradient(#202020d5, #1391b8b7),url('../images/unnamed-10.jpg');
+    /* overflow-y: scroll; */
+    height: 170vh;
+    margin-top: 0%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    margin-top: -1px;
+    padding-top: 1px;
+}
+.coachBioTextMobile{
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 70em) {
+
+    .coachBioTextMobile{
+        display: flow-root;
+        visibility: visible;
+    }
+
+    .coachBioText{
+        display: none;
+        visibility: hidden;
+    }
+   
+}
+/* .grid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    
+    padding-left: 0;
+    padding-right: 0;
+} */
