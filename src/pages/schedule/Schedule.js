@@ -6,10 +6,6 @@ import Iframe from 'react-iframe'
 import { ListGroupItem, ListGroup, Card, Row, Col, Container } from 'reactstrap';
 import Navbar  from '../components/navbar'
 
-
-// import Calendar from 'react-calendar'
-// import API from "../../utils/API.js";
-
 class Schedule extends Component {
 
     render() {
@@ -22,7 +18,12 @@ class Schedule extends Component {
               <Col sm="12" md={{ size: 6, offset: 3 }}>
             <Container id="calendarContainer">  
              {/*when replacing iframe with nicks ensure width is 100%  */}
-                <Iframe url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bHNpbWlhbmVyQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;mode=MONTH&amp;showTitle=1&amp;showNav=1" style="border-width:0"  frameborder="0" scrolling="no"
+             <Iframe url="https://calendar.google.com/calendar/embed?src=coachrhino.com_ghjg3i6a813gavdelikpme369k%40group.calendar.google.com&ctz=America%2FChicago" 
+                style="border: 0" 
+                width="800"
+                height="600" 
+                frameborder="0"
+                scrolling="no"
                 width="100%"
                 height="450px"
                 id="myId"
