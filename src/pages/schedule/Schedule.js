@@ -100,13 +100,25 @@ class Schedule extends Component {
                                     <h3 className='salesPriceTag'> Only $200 per month</h3>
                                 </div>
                                 <div className='salesLinks'>
-                                    <Link to='#'><h4 className='salesLinkText'> Buy Now</h4> </Link>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick"/>
+                                        <input type="hidden" name="hosted_button_id" value="R4Z4TYCN2M4KS"/>
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                                    </form>                                 
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick"/>
+                                        <input type="hidden" name="hosted_button_id" value="D69NTQQS5RC9G"/>
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                                    </form>
                                     <Link to='/Coaches'><h4 className='salesLinkText'> View Trainers</h4> </Link>
+    
                                 </div>
                             </Container>             
-                        </Col>
-                        <Col>
-                        <Container id='salesContainer'>
+                            </Col>
+                            <Col>
+                            <Container id='salesContainer'>
                                 <h3 className='salesHeader'>
                                     Elite Training Package
                                 </h3>
@@ -119,16 +131,26 @@ class Schedule extends Component {
                                     </ul>
                                     <h3 className='salesPriceTag'> Only $250 per month</h3>
                                 </div>
-                                <div className='salesLinks'>
-                                    <Link to='#'><h4 className='salesLinkText'> Buy Now</h4> </Link>
+                                <div className='salesLinks'>                        
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_s-xclick"/>
+                                        <input type="hidden" name="hosted_button_id" value="WFR374M8EJXVL"/>
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                                    </form>
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick"/>
+                                        <input type="hidden" name="hosted_button_id" value="TNTCTGY6B4V9E"/>
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                                    </form>
+                               
                                     <Link to='/Coaches'><h4 className='salesLinkText'> View Trainers</h4> </Link>
                                 </div>
                             </Container>       
                         </Col>
                     </Row>                
             </Container>
-
-
           </Container>           
         <Footer/>
         </div>
