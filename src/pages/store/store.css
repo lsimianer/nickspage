@@ -17,7 +17,7 @@
 }
 #sectionStore {
     background-color: transparent;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 100%;
     margin-top: 0%;
     border-radius: 15px;

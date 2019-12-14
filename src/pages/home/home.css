@@ -65,7 +65,7 @@ size: cover;
 #subHeader {
     color: rgb(3, 0, 0);
     text-shadow: 2px 5px 5px rgb(3, 83, 121), 0 0 1em rgb(245, 245, 248), 0 0 0.2em rgb(0, 195, 255);
-    animation: pulse2 10s infinite;
+    /* animation: pulse2 10s infinite; */
 }
 
 .homepageLink:hover {
@@ -75,6 +75,7 @@ size: cover;
 
 #subHeader:hover {
     color: rgb(3, 152, 211);
+    text-shadow: 2px 5px 5px rgb(3, 83, 121), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 195, 255);
 
 }
 

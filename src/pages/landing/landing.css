@@ -5,6 +5,14 @@
         visibility: visible;
         opacity: 1;
     }
+    50% {
+        visibility: visible;
+        opacity: 1;
+    }
+    95% {
+        visibility: visible;
+        opacity: 1;
+    }
     
     99% {
         visibility: visible;
@@ -50,7 +58,7 @@
     z-index: 999;
     color: black;
     background-color: rgb(0, 0, 0);
-    animation: 8s linear loadHider 1;
+    animation: 6s linear loadHider 1;
     visibility: hidden;
     opacity: 0;
     /* background-image: ; */
@@ -104,7 +112,8 @@
     background-size: 20%;
     background-repeat: repeat; */
     font-size: 3.85rem;
-    animation: 8s ease-in strobe 1;
+    animation-delay: 3s;
+    animation: 5s ease-in strobe 1;
     animation-fill-mode:forwards ;
 }
 

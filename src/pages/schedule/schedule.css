@@ -138,4 +138,7 @@ body::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.856);
 
     }
+    #scheduleContainer{
+        height: 270vh;
+    }
 }
