@@ -12,38 +12,35 @@ body{
     width: 30.25rem;
 }
 .coachCardPic{
-    height: auto;
+    height: 35vh;
 }
 #coachPageContainer{
     background-image: linear-gradient(#202020d5, #1391b8b7),url('../images/unnamed-10.jpg');
     /* overflow-y: scroll; */
-    height: 170vh;
+    height: 150%;
     margin-top: 0%;
     padding-bottom: 2%;
     margin-bottom: 2%;
     background-size: cover;
-    background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    background-repeat: no-repeat;    
     margin-top: -1px;
     padding-top: 1px;
 }
-.coachBioTextMobile{
-    display: none;
-    visibility: hidden;
+.coachBioText{
+   text-align: center;
 }
 
-@media screen and (max-width: 70em) {
+#bookNowBtn{
+    margin: auto;
+    margin-top: 5%;
 
-    .coachBioTextMobile{
-        display: flow-root;
-        visibility: visible;
-    }
+}
 
-    .coachBioText{
-        display: none;
-        visibility: hidden;
-    }
-   
+#coachCard{
+    height: auto;
+}
+.bookNowDiv{
+    text-align: center;
 }
 /* .grid {
     padding-left: 0;

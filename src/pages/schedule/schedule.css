@@ -92,6 +92,7 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
     border-radius: 25px;
     text-align: center;
+    margin-top: 2%;
     margin-bottom: 2rem;
     height: fit-content;
     color: black;
@@ -103,7 +104,9 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     font-size: 1.25rem;
 }
-
+#ppTrainingForm{
+    display: inline-block;
+}
 #ppTrainingForm:hover {
     color: rgb(3, 152, 211);
 }
@@ -123,6 +126,33 @@ body::-webkit-scrollbar-thumb {
 }
 .salesBody ul{
     list-style: none;
+}
+.bookNowLinkDiv{
+text-align: center;
+width: 40%;
+background-color: rgba(5, 107, 148, 0.486);
+margin: auto;
+margin-top: 5%;
+border-radius: 25px;
+padding: 15px 25px;
+cursor: pointer;
+border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(0, 0, 0);
+}
+.bookNowLinkDiv:hover{
+    background-color: rgba(0, 0, 0, 0.363) 
+}
+
+.bookNowLinkDiv:active{
+    background-color: rgb(3, 152, 211);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.bookNowTextLink{
+    color: black;
+    font-size: 4rem;
 }
 
 @media screen and (max-width: 70em) {

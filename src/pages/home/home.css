@@ -18,11 +18,12 @@ size: cover;
     background-image: url(../images/collage.jpg);
     background-size: cover;
     background-position-y: 0%;
-    height: 100vh;
+    height: 70vh;
     z-index: -5;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); */
     padding-top: 0%;
     margin-top: 0%;
+    margin-bottom: 2%;
 }
 
 #homeTextController {
@@ -85,6 +86,7 @@ size: cover;
         background-size: 200vh;
         background-position-x: 0%;
         overflow-y: visible;
+        height: 100%;
     }
 
     .container1 {

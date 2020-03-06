@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/Results" component={Results} />
           <Route path='/gram' component={() => window.location = 'https://www.instagram.com/br_physiques/'}/>
           <Route path='/CodeHounds' component={() => window.location = 'https://codehounds.io'}/>
+          <Route path='/bookNow' component={() => window.location = 'https://brphysiques.appointlet.com'}/>
 
           {/* <Route exact path="/Checkout" component={Pay} /> */}
           {/* 404 page */}

@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./store.css";
-import brtext from'../images/brtext.jpg';
-import rhino from'../images/babyrino.jpg';
+import blackHoody from'../images/swag_blackhoody.jpeg';
+import ballShirt from'../images/swag_ballshirt.jpeg';
+import athleticHoody from'../images/swag_athhoody.jpeg';
+import funick from'../images/swag_funick.jpeg';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Card from "react-bootstrap/Card";
 import Footer  from '../components/footer';
@@ -38,43 +40,41 @@ class Store extends Component {
         
         <div id="section3">
         <Container id="scheduleContainer">
-            <h1 id='header' className='underConstruction'> Coming soon</h1>
-            
-       {/* <Row>
-        <Col >
-            <Card id="storeCard"style={{ width: '18rem' }}>
-                <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
-                <Card.Body className="storeCB">
-                 <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
-                </Card.Body>
-            </Card> 
+            <h1 id='header' className='underConstruction'> Coming soon</h1>            
+            <Row>
+                <Col >
+                    <Card id="storeCard"style={{ width: '18rem' }}>
+                        <Card.Img id="storeImg" variant="top" src={blackHoody} alt="product" />
+                        <Card.Body className="storeCB">
+                            <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                        </Card.Body>
+                    </Card> 
+                </Col>
+                <Col xs="6">  
+                
+                <Card id="storeCard"style={{ width: '18rem' }}>
+                    <Card.Img id="storeImg" variant="top" src={funick} alt="product" />
+                    <Card.Body className="storeCB">
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.
+                        </Card.Text>
+                    <Button className="storeBtn" variant="primary">ADD TO CART</Button>
+                    </Card.Body>
+                </Card>                  
             </Col>
-            <Col xs="6">  */}
-            {/* <br/>
-            <br/>  */}
-            {/* <Card id="storeCard"style={{ width: '18rem' }}>
-                <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
-                <Card.Body className="storeCB">
-                 <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                <Button className="storeBtn" variant="primary">ADD TO CART</Button>
-                </Card.Body>
-            </Card>                  
-        </Col>
-    </Row> */}
-    {/* seperation of columns */}
-    {/* <Row>
+        </Row> 
+    {/* seperation of columns  */}
+     <Row>
         <Col>
             <Card id="storeCard"style={{ width: '18rem' }}>
-                <Card.Img id="storeImg" variant="top" src={rhino} alt="product" />
+                <Card.Img id="storeImg" variant="top" src={ballShirt} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -101,11 +101,10 @@ class Store extends Component {
                 </Card.Body>
             </Card>
             </Col> 
-            <Col > */}
-            {/* <br/>
-            <br/>   */}
-            {/* <Card id="storeCard" style={{ width: '18rem' }}>
-                <Card.Img id="storeImg" variant="top" src={brtext} alt="product" />
+            <Col > 
+               
+            <Card id="storeCard" style={{ width: '18rem' }}>
+                <Card.Img id="storeImg" variant="top" src={athleticHoody} alt="product" />
                 <Card.Body className="storeCB">
                  <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -116,7 +115,7 @@ class Store extends Component {
                 </Card.Body>
             </Card>                  
         </Col>
-      </Row> */}
+      </Row> 
       </Container>
       </div>
       <Footer/>
