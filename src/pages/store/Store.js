@@ -42,10 +42,11 @@ class Store extends Component {
         <Container id="scheduleContainer">
             <div class="containerEducation">
                 <h1 id="header"> BR Physiques Swag Store</h1>
-                <h2 id="subhead">What good is hiring the best trainer if everyone else doesn't know</h2>
+                {/* <h2 id="subhead">What good is hiring the best trainer if everyone else doesn't know</h2> */}
                 <br/>
                 {/* <p id="mainBody">Exclusive members only training content coming soon, join the mailing list to be updated!</p> */}
             </div>
+
             <Row>
                 <Col >
                     <Card id="storeCard"style={{ width: '18rem' }}>
